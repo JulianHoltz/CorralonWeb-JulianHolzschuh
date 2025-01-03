@@ -1,0 +1,41 @@
+#########################################################################################################################
+PUBLIC
+me sirve para guardar imagenes y cosas que no me importa que sean publicas
+
+#########################################################################################################################
+ESLINT reglas? ver que es?
+en clase esta permitido desactivarlo
+
+#########################################################################################################################
+index.html, no es una buena practica modificarlo
+se puede cambiar el favicon, el titulo de la etiqueta, algun script particular...
+
+#########################################################################################################################
+package-lock.json
+se crea solito y no se toca
+
+#########################################################################################################################
+node_modules
+Solo lo puede tocar alguien experto
+
+
+#########################################################################################################################
+script
+-en main.jsx se recomienda sacar el strict mode
+a main no le toco mas que eso...
+
+-App.jsx
+Es el padre de todos nuestros compoenntes,
+al principio vamos a llamar todo de aca...
+
+
+#########################################################################################################################
+Levantar la APP en modo local
+en la terminal...
+npm run dev
+
+
+En caso que falle, hay que eliminar NodeModules y borrar packge JSON lock. 
+y corremos el npm install para que reinstale, algo se debe haber instalado mal antes... puede fallar dice tusam 
+
+una vez que corre ctrl + click abre
