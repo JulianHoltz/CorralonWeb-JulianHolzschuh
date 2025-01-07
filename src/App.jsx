@@ -1,7 +1,6 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import EjemploProps from './components/EjemploProps'
 import './App.css'
+
 //los imports que no uso deberia sacrlos...
 
 //CONSEJO los nombres de los archivos no se modifican
@@ -11,14 +10,28 @@ import './App.css'
 //las clases aca se llaman className
 //windos + . abre panel de emojis
 
-function App() { //componente
-  const [count, setCount] = useState(0) //hooking
-  const bienvenido = `bienvenidos a mi pagina wachines!`
+function App() {
+
+  const wellcome = "Esto es una Prop"
 
   return (
     <>
+    <header className='header'>
+      <a href="/" className='logoNav'>LOGO</a>
+
+      <nav className='navbar'>
+        <a href='/'>HOME</a>
+        <a href='/'>TIENDA</a>
+        <a href='/'>EVENTOS</a>
+      </nav>
+      
+    </header>
+
     <h1>HOLA</h1>
-    <p style={{color:'red'}}>{bienvenido} 👀</p>
+    <p style={{color:'red'}}>{"bienvenido"} 👀</p>
+    <EjemploProps wellcome={wellcome}/>
+
+    {/*importo el componente de ejemploProps */}
     </>
   )
 }
